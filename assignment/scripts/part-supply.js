@@ -9,7 +9,7 @@ console.log(partsNeeded);
 // 2. Create a variable call 'supplyChanges' set it to an array containing
 //    the following numbers: 3, 5, -6, 0, 7, 11
 console.log('2. Array of supplyChanges:');
-let  supplyChanges = ['3', '5', '-6', '0', '7', '11']
+let  supplyChanges = [3, 5, -6, 0, 7, 11]
 console.log(supplyChanges);
 // 3. Console log the value of the second item in the 'supplyChanges' array
 console.log('3. Second supplyChange is:');
@@ -44,7 +44,8 @@ for (let x=0; x<supplyChanges.length; x++){
 console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop.
 console.log('7. Showing supplyChanges with "for of" loop');
-
+for (let asupply of supplyChanges)
+console.log(asupply);
 // 8. Rewrite the `for` loop from #6 as a `while` loop.
 console.log('8. Showing supplyChanges with "while" loop');
 
@@ -52,12 +53,7 @@ console.log('8. Showing supplyChanges with "while" loop');
 // 9. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
 console.log('9. Total supplies available is:');
-//let sum = 0;
-//for (x=0; x<25; x++){
-//console.log(x);
-//sum +=x;
-//}
-//console.log(sum);
-//
-//
-//
+let sum = 0;
+for (let i= 0; i<supplyChanges.length; i++) {
+   sum += supplyChanges[i]; }
+   console.log('The sum is', + sum);
